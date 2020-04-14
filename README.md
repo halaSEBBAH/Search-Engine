@@ -10,7 +10,7 @@ Django version : 2.0.3
 elasticsearch : 7.3.2
 
 
-### Overview of interaction with elasticsearch index usig python
+### Overview of interaction with elasticsearch index using python
 
 ```
 # Needed imports 
@@ -34,6 +34,7 @@ class Candidat(Document):
     listeSkills = Text()
     raw = Text()
 
+    # Define the name of the index in server
     class Index:
         name = 'base_candidat'
 
@@ -62,5 +63,6 @@ def retrieveCandidate(str):
 
 * set environement for python
 * Run elasticsearch server 
+* Populate inedx with appropriate data
 * navigate to $Your_Path/project and run python manage.py runserver
 
