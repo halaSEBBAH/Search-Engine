@@ -42,7 +42,7 @@ class Candidat(Document):
         return super(Candidat, self).save(**kwargs)
 
 
-#Function For saving :
+#Function For saving 
 def saveCandidate(context):
     Candidat.init()
     candidat = Candidat(email = context['email'] , url = context['url'] , name = context['name'] ,phone = context['phone'] , raw = context['raw'] )
