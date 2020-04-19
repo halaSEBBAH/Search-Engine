@@ -6,7 +6,7 @@ from django.db import migrations, models
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('afficheur', '0002_city_description'),
+        ('searchApp', '0002_city_description'),
     ]
 
     operations = [

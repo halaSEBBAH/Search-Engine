@@ -43,16 +43,16 @@
         <div class="container">
             <div class="columns">
                 <div class="column is-offset-4 is-4">
-                    {%  for city_weather in weather_data %}
+                    {%  for candidate in Candidates_data %}
                     <div class="box">
                         <article class="media">
                             <div class="media-content">
                                 <div class="content">
                                     <p>
-                                        <span class="title">{{ city_weather.name }}</span>
+                                        <span class="title">{{ candidate.name }}</span>
                                         <br>
-                                        <span class="subtitle">{{ city_weather.email }}</span>
-                                        <br> {{ city_weather.description }}
+                                        <span class="subtitle">{{ candidate.email }}</span>
+                                        <br> {{ candidate.description }}
                                     </p>
                                 </div>
                             </div>

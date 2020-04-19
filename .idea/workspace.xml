@@ -1,7 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="908e3cd6-0d6d-439a-bbc5-d44c69d88228" name="Default Changelist" comment="" />
+    <list default="true" id="908e3cd6-0d6d-439a-bbc5-d44c69d88228" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/searchApp/apps.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/searchApp/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/afficheur/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/searchApp/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/afficheur/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/searchApp/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/afficheur/apps.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/afficheur/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/searchApp/forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/afficheur/migrations/0001_initial.py" beforeDir="false" afterPath="$PROJECT_DIR$/searchApp/migrations/0001_initial.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/afficheur/migrations/0002_city_description.py" beforeDir="false" afterPath="$PROJECT_DIR$/searchApp/migrations/0002_city_description.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/afficheur/migrations/0003_auto_20191123_2005.py" beforeDir="false" afterPath="$PROJECT_DIR$/searchApp/migrations/0003_auto_20191123_2005.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/afficheur/migrations/0004_city_raw.py" beforeDir="false" afterPath="$PROJECT_DIR$/searchApp/migrations/0004_city_raw.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/afficheur/migrations/0005_auto_20191123_2107.py" beforeDir="false" afterPath="$PROJECT_DIR$/searchApp/migrations/0005_auto_20191123_2107.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/afficheur/migrations/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/searchApp/migrations/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/afficheur/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/searchApp/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/afficheur/static/images/recherche.png" beforeDir="false" afterPath="$PROJECT_DIR$/searchApp/static/images/recherche.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/afficheur/templates/afficheur/new.html" beforeDir="false" afterPath="$PROJECT_DIR$/searchApp/templates/searchApp/page.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/afficheur/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/searchApp/tests.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/afficheur/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/searchApp/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/afficheur/views.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/project/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/project/urls.py" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -164,6 +186,7 @@
       <workItem from="1576787164270" duration="303000" />
       <workItem from="1576788369601" duration="175000" />
       <workItem from="1586801812210" duration="3981000" />
+      <workItem from="1587264135398" duration="3457000" />
     </task>
     <servers />
   </component>
@@ -175,7 +198,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
