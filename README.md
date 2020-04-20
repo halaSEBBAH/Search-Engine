@@ -1,4 +1,4 @@
-# Search Engine
+### Search Engine
 
 Simple search engine using elasticsearch and django framework.
 Data is stored in indexes in elasticsearch server.
@@ -28,7 +28,7 @@ client = Elasticsearch()
 ```
 
 # Define a class that contains the same attributs as the index in the elasticsearch server
-## Exemple ##
+ Exemple
 ```
 class Candidat(Document):
     email = Text()
@@ -46,14 +46,14 @@ class Candidat(Document):
         return super(Candidat, self).save(**kwargs)
 
 ```
-#Function For saving 
+# Function For saving 
 ```
 def saveCandidate(context):
     Candidat.init()
     candidat = Candidat(email = context['email'] , url = context['url'] , name = context['name'] ,phone = context['phone'] , raw = context['raw'] )
     candidat.save()
 ```
-#Function for searching
+# Function for searching
 ```
 def retrieveCandidate(str):
     s = Search(using=client)
