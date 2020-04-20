@@ -68,7 +68,6 @@ def retrieveCandidate(str):
 ### Run Project
 
 * set environement for python
-  *smth
 * Run elasticsearch server 
 * Populate index with appropriate data
 * navigate to $Your_Path/project and run python manage.py runserver
