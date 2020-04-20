@@ -12,20 +12,24 @@ elasticsearch : 7.3.2
 
 ### Overview of interaction with elasticsearch index using python
 
-```
+
 # Needed imports 
+```
 from elasticsearch_dsl import Document, Text
 from elasticsearch_dsl.connections import connections
 from elasticsearch import Elasticsearch
 from elasticsearch_dsl import Search
-
+```
 
 # Define a default Elasticsearch client
+```
 connections.create_connection(hosts=['localhost'])
 client = Elasticsearch()
+```
 
 # Define a class that contains the same attributs as the index in the elasticsearch server
 ## Exemple ##
+```
 class Candidat(Document):
     email = Text()
     url = Text()
@@ -41,14 +45,16 @@ class Candidat(Document):
     def save(self, **kwargs):
         return super(Candidat, self).save(**kwargs)
 
-
+```
 #Function For saving 
+```
 def saveCandidate(context):
     Candidat.init()
     candidat = Candidat(email = context['email'] , url = context['url'] , name = context['name'] ,phone = context['phone'] , raw = context['raw'] )
     candidat.save()
-
+```
 #Function for searching
+```
 def retrieveCandidate(str):
     s = Search(using=client)
     s = Search().using(client).index('base_candidat').query("match", raw=str)
@@ -63,6 +69,6 @@ def retrieveCandidate(str):
 
 * set environement for python
 * Run elasticsearch server 
-* Populate inedx with appropriate data
+* Populate index with appropriate data
 * navigate to $Your_Path/project and run python manage.py runserver
 
